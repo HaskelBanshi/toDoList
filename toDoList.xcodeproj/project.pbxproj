@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		8343BC492871CD00009EC485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343BC482871CD00009EC485 /* AppDelegate.swift */; };
 		8343BC4B2871CD00009EC485 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343BC4A2871CD00009EC485 /* SceneDelegate.swift */; };
-		8343BC4D2871CD00009EC485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343BC4C2871CD00009EC485 /* ViewController.swift */; };
 		8343BC502871CD00009EC485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8343BC4E2871CD00009EC485 /* Main.storyboard */; };
 		8343BC522871CD04009EC485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8343BC512871CD04009EC485 /* Assets.xcassets */; };
 		8343BC552871CD04009EC485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8343BC532871CD04009EC485 /* LaunchScreen.storyboard */; };
 		8343BC602871CD05009EC485 /* toDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343BC5F2871CD05009EC485 /* toDoListTests.swift */; };
 		8343BC6A2871CD05009EC485 /* toDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343BC692871CD05009EC485 /* toDoListUITests.swift */; };
 		8343BC6C2871CD05009EC485 /* toDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343BC6B2871CD05009EC485 /* toDoListUITestsLaunchTests.swift */; };
+		8343BC792871D635009EC485 /* TaskListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343BC782871D634009EC485 /* TaskListTVC.swift */; };
+		8343BC7B2871D679009EC485 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343BC7A2871D679009EC485 /* TaskCell.swift */; };
+		8343BC7D2871D7B4009EC485 /* TaskCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343BC7C2871D7B4009EC485 /* TaskCViewController.swift */; };
+		8343BC7F2871D7EF009EC485 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343BC7E2871D7EF009EC485 /* Delegates.swift */; };
+		8343BC812871D7FB009EC485 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343BC802871D7FB009EC485 /* TaskModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,6 @@
 		8343BC452871CD00009EC485 /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8343BC482871CD00009EC485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8343BC4A2871CD00009EC485 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8343BC4C2871CD00009EC485 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8343BC4F2871CD00009EC485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8343BC512871CD04009EC485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8343BC542871CD04009EC485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		8343BC652871CD05009EC485 /* toDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = toDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8343BC692871CD05009EC485 /* toDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListUITests.swift; sourceTree = "<group>"; };
 		8343BC6B2871CD05009EC485 /* toDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8343BC782871D634009EC485 /* TaskListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTVC.swift; sourceTree = "<group>"; };
+		8343BC7A2871D679009EC485 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		8343BC7C2871D7B4009EC485 /* TaskCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCViewController.swift; sourceTree = "<group>"; };
+		8343BC7E2871D7EF009EC485 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
+		8343BC802871D7FB009EC485 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,12 @@
 			children = (
 				8343BC482871CD00009EC485 /* AppDelegate.swift */,
 				8343BC4A2871CD00009EC485 /* SceneDelegate.swift */,
-				8343BC4C2871CD00009EC485 /* ViewController.swift */,
 				8343BC4E2871CD00009EC485 /* Main.storyboard */,
+				8343BC7E2871D7EF009EC485 /* Delegates.swift */,
+				8343BC802871D7FB009EC485 /* TaskModel.swift */,
+				8343BC7C2871D7B4009EC485 /* TaskCViewController.swift */,
+				8343BC7A2871D679009EC485 /* TaskCell.swift */,
+				8343BC782871D634009EC485 /* TaskListTVC.swift */,
 				8343BC512871CD04009EC485 /* Assets.xcassets */,
 				8343BC532871CD04009EC485 /* LaunchScreen.storyboard */,
 				8343BC562871CD04009EC485 /* Info.plist */,
@@ -258,9 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8343BC4D2871CD00009EC485 /* ViewController.swift in Sources */,
+				8343BC7D2871D7B4009EC485 /* TaskCViewController.swift in Sources */,
+				8343BC7B2871D679009EC485 /* TaskCell.swift in Sources */,
 				8343BC492871CD00009EC485 /* AppDelegate.swift in Sources */,
 				8343BC4B2871CD00009EC485 /* SceneDelegate.swift in Sources */,
+				8343BC7F2871D7EF009EC485 /* Delegates.swift in Sources */,
+				8343BC792871D635009EC485 /* TaskListTVC.swift in Sources */,
+				8343BC812871D7FB009EC485 /* TaskModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
